@@ -318,7 +318,7 @@ div > span {
         position: relative;
         bottom: 0;
         right: 0;
-        font-size: 1.3em;
+        font-size: 1.15em;
     }
 
     @keyframes copied {
