@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Palette</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+        
+        <header>
+            
+            <h1>Palette</h1>
+            
+            <div class="theme-btns-container">
+                
+                    <button class="theme-switch" id="light-theme-btn" aria-label="Light theme">
+                        <i class="fa-regular fa-sun"></i>
+                    </button>
+                    
+                    <button class="theme-switch" id="dark-theme-btn" aria-label="Dark theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    
+            </div>
+            
+            
+            <div class="inputs-container">
+                
+                <input type="color" class="input clr-input" id="clr-input" aria-label="Select a seed colour" value="#459CEE"></input>
+                
+                <select class="input scheme-select" aria-label="Select a colour scheme type">
+                    <option class="scheme-option" value="monochrome">Monochrome</option>
+                    <option class="scheme-option" value="monochrome-dark">Monochrome Dark</option>
+                    <option class="scheme-option" value="monochrome-light">Monochrome Light</option>
+                    <option class="scheme-option" value="analogic">Analogic</option>
+                    <option class="scheme-option" value="complement">Complement</option>
+                    <option class="scheme-option" value="analogic-complement">Analogic-Complement</option>
+                    <option class="scheme-option" value="triad">Triad</option>
+                    <option class="scheme-option" value="quad">Quad</option>
+                </select>
+                
+                <p id="clr-input-text">#459CEE</p>
+                <button class="input get-scheme-btn">Get colour scheme</button>
+            
+            </div>
+            
+            <p class="hint">Click anywhere on a colour to copy its hex code!</p>
+
+        </header>
+    
+        
+        <main class="palette">
+            
+            <div class="clr" id="clr-0">
+                <span id="clr-0-span"></span>
+                <p class="clr-hex-code" id="clr-0-text">#3EEBD8</p>
+            </div>
+            
+            <div class="clr" id="clr-1">
+                <span id="clr-1-span"></span>
+                <p class="clr-hex-code" id="clr-1-text">#42CDED</p>
+            </div>
+            
+            <div class="clr" id="clr-2">
+                <span id="clr-2-span"></span>
+                <p class="clr-hex-code" id="clr-2-text">#459CEE</p>
+            </div>
+            
+            <div class="clr" id="clr-3">
+                <span id="clr-3-span"></span>
+                <p class="clr-hex-code" id="clr-3-text">#496CF0</p>
+            </div>
+            
+            <div class="clr" id="clr-4">
+                <span id="clr-4-span"></span>
+                <p class="clr-hex-code" id="clr-4-text">#5B4DF1</p>
+            </div>
+            
+        </main>
+        
+        <script type="module" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/1f9b885cb6.js" crossorigin="anonymous"></script>
+
+    </body>
+    
+</html>
