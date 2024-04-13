@@ -40,7 +40,8 @@ input,
 select,
 button,
 option,
-p {
+p,
+span {
     font-family: var(--font-main);
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -317,6 +318,7 @@ div > span {
         position: relative;
         bottom: 0;
         right: 0;
+        font-size: 1.3em;
     }
 
     @keyframes copied {
