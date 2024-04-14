@@ -135,7 +135,7 @@ select, input:not(.clr-input) {
 .input:focus,
 .input:active
  {
-    /* font-weight: 700;    */
+    font-weight: 700;   
     outline: solid var(--clr-outline) 5px;
     border: 2px solid var(--clr-border);
 }
@@ -154,7 +154,11 @@ select, input:not(.clr-input) {
     color: var(--clr-text);
     pointer-events: none;
     letter-spacing: 1.75px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+#clr-input:hover ~ #clr-input-text {
+    font-weight: 800;
 }
 
 .scheme-select {
@@ -190,26 +194,6 @@ select, input:not(.clr-input) {
     align-items: end;
     justify-content: end;
     position: relative;
-}
-
-#clr-0{
-    background-color: #3EEBD8;
-}
-
-#clr-1 {
-    background-color: #42CDED;
-}
-
-#clr-2 {
-    background-color: #459CEE;
-}
-
-#clr-3 {
-    background-color: #496CF0;
-}
-
-#clr-4 {
-    background-color: #5B4DF1;
 }
 
 .clr-hex-code {
@@ -318,7 +302,6 @@ div > span {
         position: relative;
         bottom: 0;
         right: 0;
-        font-size: 1.15em;
     }
 
     @keyframes copied {
@@ -363,7 +346,7 @@ div > span {
         border-radius: 6px;
         text-align: center;
     }
-
+    
     button {
         line-height: 0;
     }
